@@ -8,7 +8,7 @@ public class SwitchConditions {
         System.out.println("Enter week day value (1-7):");
         int weekday = scanner.nextInt();
 
-        switch (weekday){
+        switch (weekday) {
             case 1: //weekday == 1
                 System.out.println("Monday");
                 break;
@@ -41,19 +41,19 @@ public class SwitchConditions {
 
         }
 
-    /*
+/*
 
-    marklist - a+b+c => avg
+marklist - a+b+c => avg
 
-    avg 90+ A
-    89-70 - B
-    69-50- C
-    less than 50 - F
+avg 90+ A
+89-70 - B
+69-50- C
+less than 50 - F
 
 
-    Month -1
+Month -1
 
-     */
+ */
 
     }
 }
