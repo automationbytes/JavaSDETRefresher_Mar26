@@ -33,10 +33,10 @@ public class Array_Eg {
 
         //2nd way
         int[] b = {1,6,9,7,3,4,4};
-        System.out.println(Arrays.toString(b));
+        System.out.println(Arrays.toString(b)); //just to print entire array
 
         //length of array
-        System.out.println(b.length);
+        System.out.println(b.length); // print length of array
 
         //for loop
         for (int i = 0; i < b.length; i++) {

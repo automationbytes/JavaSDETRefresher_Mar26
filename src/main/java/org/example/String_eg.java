@@ -2,90 +2,100 @@ package org.example;
 
 import java.util.Arrays;
 
+/**
+ * Demonstrates various operations and methods available in the String class in Java.
+ * Covers topics such as string creation, comparison, manipulation, and utility methods.
+ */
 public class String_eg {
     public static void main(String[] args) {
         /*
-        String - used to store more than one chars
-        "" - surrounded with quotes
-
-        Literal way - String Pool Memory
-        New Keyword Way  - Heap Memory
-
+         * String - used to store more than one character.
+         * Strings are enclosed in double quotes ("").
+         *
+         * Two ways to create strings:
+         * 1. Literal way - Stored in String Pool Memory.
+         * 2. Using the new keyword - Stored in Heap Memory.
          */
-        //literal way
-        String a = "hello"; // shared memory //123
-        String c = "Hello"; //123
 
-        //new keyword way
-        String b = new String("hello"); //789
+        // Literal way: Strings are stored in shared memory (String Pool).
+        String a = "hello"; // shared memory
+        String c = "Hello"; // shared memory
 
-        //== and .equals
-        System.out.println(a == b);
-        System.out.println(a == c);
+        // New keyword way: Strings are stored in heap memory.
+        String b = new String("hello"); // separate memory allocation
 
-        //equals
-        System.out.println(a.equals(b)); // it will not check the memory
-        System.out.println(a.equals(c));
-        //equals ignore case
+        // Comparing strings using == and .equals
+        System.out.println(a == b); // Compares memory references
+        System.out.println(a == c); // Compares memory references
+
+        // .equals method: Compares the content of the strings
+        System.out.println(a.equals(b)); // Content comparison
+        System.out.println(a.equals(c)); // Content comparison
+
+        // .equalsIgnoreCase: Compares content ignoring case
         System.out.println(a.equalsIgnoreCase(c));
 
-        //starts-with
+        // Check if the string starts with a specific prefix
         System.out.println(a.startsWith("He"));
 
-        //ends-with
+        // Check if the string ends with a specific suffix
         System.out.println(a.endsWith("o"));
 
-        //contains
+        // Check if the string contains a specific sequence
         System.out.println(a.contains("ll"));
 
-        //char-at
+        // Get the character at a specific index
+        System.out.println(a.charAt(2)); // Index starts from 0
 
-        System.out.println(a.charAt(2)); //h-0 e-1 l-2 l-3 o-4
-
-        //index-of
+        // Get the index of the first occurrence of a character
         System.out.println(a.indexOf("l"));
-        //last index of
+
+        // Get the index of the last occurrence of a character
         System.out.println(a.lastIndexOf("l"));
 
+        // Concatenate two strings
         String i = "ice";
         String j = "juice";
-        System.out.println(i.concat(j));
-        System.out.println(i+j);
+        System.out.println(i.concat(j)); // Using concat method
+        System.out.println(i + j); // Using + operator
 
+        // Replace characters in a string
         String k = "kalpana is a sweet girl";
-        System.out.println(k.replace("a","0"));
+        System.out.println(k.replace("a", "0"));
 
-        //split
-         String[] words = k.split(" ");
+        // Split a string into an array based on a delimiter
+        String[] words = k.split(" ");
         System.out.println(Arrays.toString(words));
 
-        //trim
+        // Remove leading and trailing spaces
         String l = "     love my country     ";
-        System.out.println(l.trim());
+        System.out.println(l.trim()); // Removes leading and trailing spaces
 
+        // Strip leading and trailing spaces (alternative to trim)
         System.out.println(l.strip());
 
-
-        //leading strip - left space
+        // Remove only leading spaces
         System.out.println(l.stripLeading());
 
-        //trailing strip - right space
+        // Remove only trailing spaces
         System.out.println(l.stripTrailing());
 
-        //upper case
-
+        // Convert string to uppercase
         System.out.println(l.toUpperCase());
+
+        // Convert string to lowercase
         System.out.println(l.toLowerCase());
 
-
+        // Extract a substring from a string
         String appli = "Application id is: 4997976";
-        System.out.println(appli.substring(19,26));
+        System.out.println(appli.substring(19, 26)); // Extracts "4997976"
 
+        // Split a string into parts based on a delimiter
         String[] sp = appli.split(": ");
-        System.out.println(sp[0]);
-        System.out.println(sp[1]);
+        System.out.println(sp[0]); // First part
+        System.out.println(sp[1]); // Second part
 
-        //to chararray
+        // Convert a string to a character array
         String m = "mahath";
         char[] arr = m.toCharArray();
         System.out.println(Arrays.toString(arr));
