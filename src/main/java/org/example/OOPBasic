@@ -1,0 +1,92 @@
+OOPs - Object Oriented Programming System
+
+1. Class - A class is a blueprint or template for creating objects.
+It defines the properties (attributes)
+and behaviors (methods) that the objects of that class will have.
+
+Class - attributes /data members
+Students
+name -tom | jerry
+age -6 | 7
+grade 2 | 2
+id 19 | 10
+
+
+Methods /behaviors
+study()
+attendClass()
+submitAssignment()
+play()
+
+object - An object is an instance of a class.
+It is a specific entity that has its own state and behavior.
+
+Stud{
+String name;
+int age;
+int grade;
+int id;
+}
+
+Study(){
+//code to study
+}
+
+Students tom = new Students();
+Students jerry = new Students();
+
+tom.Study();
+
+-----------------------------------------
+Benefits of OOPs:
+1) Clear structure: OOPs allows for a clear and organized structure of code, making it easier to understand and maintain.
+2) Reusability: OOPs promotes code reusability through inheritance and polymorphism, allowing developers to create new classes based on existing ones and reuse code efficiently.
+3) Modularity: OOPs encourages modular programming, where code is divided into smaller, self-contained modules (classes), making it easier to manage and debug.
+4) Faster and easier development: OOPs provides a framework for designing and developing software, which can lead to faster and easier development processes.
+5) Improved maintainability: OOPs allows for better organization and encapsulation of code,
+
+
+
+==============================================================
+
+4 - Pillars of OOPs:
+1) Inheritance: Inheritance is a fundamental concept in OOPs that allows a new class (called a subclass or child class) to inherit
+
+super class or parent class - the class being inherited from
+sub class or child class - the class that inherits from the another class
+
+extends - keyword used to inherit a class
+
+Types of Inheritance:
+1) Single Inheritance: A subclass inherits from a single superclass.
+2) Multilevel Inheritance: A subclass inherits from a superclass, which in turn inherits from
+3) Hierarchical Inheritance: Multiple subclasses inherit from a single superclass.
+4) Hybrid Inheritance: A combination of multiple types of inheritance
+5) Multiple Inheritance: A subclass inherits from multiple superclasses (not supported in Java, but can be achieved through interfaces).
+
+
+Polymorphism: Polymorphism is the ability of an object to take on many forms. It allows objects of different classes to be treated as objects of a common superclass.
+Polymorphism is achieved through method overriding and method overloading.
+
+Poly - Many
+morph - Forms
+
+Overloading - same method name with different parameters
+    easy to remember method name but different implementation based on parameters
+
+Overriding - same method name with same parameters but different implementation in subclass
+
+parent
+marriage() -> abc
+gift()
+
+child
+marriage() -> xyz
+
+
+
+
+
+
+
+
