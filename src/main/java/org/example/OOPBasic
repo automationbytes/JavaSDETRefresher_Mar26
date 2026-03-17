@@ -83,6 +83,25 @@ gift()
 child
 marriage() -> xyz
 
+Abstraction
+
+Abstract Class - An abstract class is a class that cannot be instantiated and is meant to be subclassed. It can contain abstract methods (methods without implementation) that must be implemented by the subclasses.
+0-100% abstraction - abstract class
+(Abstract class can have both abstract and non-abstract methods)
+Incomplete class - cannot create object of abstract class
+Abstract class can have constructor and static methods
+
+
+100% abstraction - interface
+Interface - An interface is a reference type in Java that is similar to a class but can only contain abstract methods, default methods, static methods, and constant variables. It is used to specify a contract that classes must adhere to.
+
+
+Encapsulation - Encapsulation is the process of bundling data (attributes) and methods (behaviors) that operate on the data into a single unit, called a class. It also involves hiding the internal details of an object and providing a public interface for interacting with it.
+
+private
+
+
+
 
 
 
