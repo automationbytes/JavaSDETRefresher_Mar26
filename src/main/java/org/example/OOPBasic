@@ -98,8 +98,8 @@ Interface - An interface is a reference type in Java that is similar to a class 
 
 Encapsulation - Encapsulation is the process of bundling data (attributes) and methods (behaviors) that operate on the data into a single unit, called a class. It also involves hiding the internal details of an object and providing a public interface for interacting with it.
 
-private
-
+private data members - cannot be accessed directly from outside the class
+public methods - can be accessed from outside the class to interact with the private data members
 
 
 
