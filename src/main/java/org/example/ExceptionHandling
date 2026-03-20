@@ -1,0 +1,26 @@
+Throwable class
+
+1) Error
+    Unrecoverable errors that occur in the JVM, such as OutOfMemoryError or StackOverflowError. These are typically not meant to be caught by applications.
+    Never caught during compile time, but can be caught during runtime if necessary.
+
+    Note: We can't use Try/Catch here
+
+2) Exception
+    Recoverable conditions that can be handled by the application. Exceptions are further divided into two categories: checked exceptions and unchecked exceptions.
+    a) Checked Exceptions (Compile Time Exception): These are exceptions that must be either caught or declared in the method signature. They are checked at compile time. Examples include IOException, SQLException, etc.
+    b) Unchecked Exceptions (Run Time): These are exceptions that do not need to be declared or caught. They are typically caused by programming errors, such as NullPointerException, ArrayIndexOutOfBoundsException, etc. Unchecked exceptions are checked at runtime.
+
+
+Try:   A block of code that is used to wrap code that may throw an exception. If an exception occurs within the try block, it will be caught and handled by the corresponding catch block.
+
+Catch:
+    A block of code that is used to handle exceptions thrown by the try block. It specifies the type of exception it can handle and contains the code to execute when that exception occurs.
+
+Finally:
+    A block of code that is always executed after the try and catch blocks, regardless of whether an exception was thrown or caught. It is typically used for cleanup operations, such as closing resources.
+
+
+Throw:
+    Used to explicitly throw an exception. It can be used to signal an error condition or to indicate that a specific condition has occurred
+Throws:    Used in a method signature to declare that the method may throw one or more exceptions. It indicates to the caller of the method that they need to handle or declare these exceptions. For example, if a method declares "throws IOException", it means that the method may throw an IOException, and the caller must either catch it or declare it in their own method signature.
