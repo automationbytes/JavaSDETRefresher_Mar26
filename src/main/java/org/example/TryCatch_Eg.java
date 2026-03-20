@@ -7,8 +7,11 @@ public class TryCatch_Eg {
         //try catch block
 
         try {
-            int[] i = {10};
-            System.out.println(i[56]); //throw me a error
+
+            String a = null;
+            System.out.println(a.length()); //throw me a error
+//            int[] i = {10};
+//            System.out.println(i[56]); //throw me a error
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Error: " + e.getMessage());
@@ -16,6 +19,9 @@ public class TryCatch_Eg {
         }catch (ArithmeticException e) {
             System.out.println("Error: " + e.getMessage());
             System.out.println("Arithmetic exception caught");
+        }catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+            System.out.println("Exception caught");
         }
         finally {
             System.out.println("This will always execute");
