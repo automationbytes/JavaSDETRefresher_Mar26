@@ -1,0 +1,19 @@
+Collections - Manipulation of Data (Store and Manipulate Data)
+
+Collections - Interface - List, Set, Map, Queue
+-------------------------------------------------------------
+List (Interface) - Implementing class - ArrayList, LinkedList,  -------Vector, Stack
+
+Arraylist - Dynamic Array (Resizing) - Duplicate Allowed - Insertion Order Maintained - Null Allowed
+
+LinkedList - Doubly Linked List - Duplicate Allowed - Insertion Order Maintained - Null Allowed
+
+
+---------------------------------------------------------
+Set (Interface) - Implementing class - HashSet, LinkedHashSet, TreeSet
+
+Set - No Duplicate Allowed - No Insertion Order Maintained - One Null Allowed (Except TreeSet)
+
+HashSet - Hashing Algorithm - No Insertion Order Maintained - One Null Allowed
+LinkedHashSet - Hashing Algorithm + Linked List - Insertion Order Maintained - One Null Allowed
+TreeSet - Sorting - Red-Black Tree - No Insertion Order Maintained - No Null Allowed
